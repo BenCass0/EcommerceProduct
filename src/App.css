@@ -1,0 +1,86 @@
+header{
+  background-color: pink;
+  height: 5vmax;
+  min-height: 60px;
+  position: relative;
+}
+.Container{
+  width: 70%;
+  min-width: 800px;
+  height: 38vmax;
+  min-height: 500px;
+  display: flex;
+  margin:100px 0 0 16vmax;
+}
+.Products{
+  width: 40%;
+  height: 100%;
+}
+.MainProduct{
+  border-radius: 20px;
+  height: 80%;
+}
+.MainProduct img{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.ImageProducts{
+  height: 20%;
+  display: flex;
+  
+}
+.ImageProducts img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.Images{
+  width: 25%;
+  min-width: 30px;
+
+  margin: 1vmax;
+}
+.Text{
+  margin: 3vmax 0 0 5vmax;
+  width: 30vmax;
+  min-width: 400px;
+}
+h1{
+  margin-top: 0;
+}
+h2{
+  display: flex;
+  margin-bottom: 0;
+}
+h4{
+  margin-bottom: 0;
+  opacity: 0.5;
+}
+p{
+  opacity: 0.5;
+  width: 420px;
+}
+button{
+  margin-left: 2vmax;
+  width: 50px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  margin-top: 3px;
+}
+.Counter{
+  display: flex;
+}
+.imgStyle:active{
+  border: 2px;
+  border-color: orange;
+}
+.priceDiscount{
+  text-decoration: line-through;
+  margin-top: 0;
+}
