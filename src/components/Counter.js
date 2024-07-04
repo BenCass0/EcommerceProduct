@@ -1,8 +1,14 @@
-import React from 'react';
+import React,{useContext} from 'react';
 import Button from '@mui/material/Button';
 import { BoxCounter } from './boxCounter';
-
+import { CountContext } from './CountContext';
 export function Counter() {
+    const {add,setCount}=useContext(CountContext);
+
+    const updateCart=()=>{
+        setCount(add);
+    };
+
     return (
         <div className='Counter'>
             <BoxCounter />
@@ -19,6 +25,7 @@ export function Counter() {
                         marginLeft: '10px',
                         borderRadius: '10px'
                     }}
+                    onClick={updateCart}
                 >
                     Add To Cart
                 </Button>

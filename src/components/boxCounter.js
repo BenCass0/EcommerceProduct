@@ -5,7 +5,7 @@ import React, { useContext } from 'react';
 import { CountContext } from './CountContext';
 
 export function BoxCounter() {
-    const { count, setCount } = useContext(CountContext);
+    const { add, setAdd } = useContext(CountContext);
 
     return (
         <div style={{ display: 'flex' }}>
@@ -14,13 +14,13 @@ export function BoxCounter() {
                     arialabel='Minus'
                     operation={Icons.Minus}
                     onClick={() => {
-                        setCount(Math.max(count - 1, 0));
+                        setAdd(Math.max(add - 1, 0));
                     }}
                 />
             </Box>
             <Box sx={{ backgroundColor: 'hsl(223, 64%, 98%)', width: '60px', height: '42px' }}>
                 <Badge
-                    badgeContent={count}
+                    badgeContent={add}
                     color='primary'
                     showZero
                     sx={{
@@ -40,7 +40,7 @@ export function BoxCounter() {
                     arialabel='Plus'
                     operation={Icons.Plus}
                     onClick={() => {
-                        setCount(count + 1);
+                        setAdd(add + 1);
                     }}
                 />
             </Box>
