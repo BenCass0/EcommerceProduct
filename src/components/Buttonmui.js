@@ -1,8 +1,8 @@
-import {Button as ButtonMUI} from "@mui/material"
+import {Button} from "@mui/material"
 
 export const Buttonmui=({title})=>{
     return(
-        <ButtonMUI
+        <Button
         color='primary' 
         sx={{
             textTransform:'none',
@@ -13,6 +13,6 @@ export const Buttonmui=({title})=>{
             ':hover':{borderBottom:'4px solid hsl(26, 100%, 55%)'},}}
         >
             {title}
-        </ButtonMUI>
+        </Button>
     )
 }

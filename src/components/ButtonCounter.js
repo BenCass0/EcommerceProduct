@@ -10,7 +10,7 @@ export const ButtonCounter=({arialabel,operation, onClick })=>{
         }}
         aria-label={arialabel}
         onClick={onClick}>
-            <img src={operation} alt={arialabel}></img>
+            <img src={operation} alt={arialabel}/>
         </IconButton>
     )
 }

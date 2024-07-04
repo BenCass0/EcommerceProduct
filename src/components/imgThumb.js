@@ -6,8 +6,7 @@ export const ImgThumb=({image,onClick})=>{
             alt='thumb'
             style={{cursor:'pointer'}}
             className='imgStyle'
-            onClick={onClick}
-            ></img>
+            onClick={onClick}/>
         </div>
     )
 };

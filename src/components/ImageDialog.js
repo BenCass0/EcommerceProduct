@@ -1,5 +1,5 @@
 import { Dialog,DialogContent,IconButton,Card,CardMedia} from "@mui/material"
-import { imgDialogIcons } from "../utils"
+import { Icons } from "../utils/icons"
 
 export const ImageDialog=({open,handleClose,handlePrev,handleNext,currentImage})=>{  
     return(
@@ -9,19 +9,19 @@ export const ImageDialog=({open,handleClose,handlePrev,handleNext,currentImage})
           aria-label='close'
           onClick={handleClose}
           style={{position:'absolute',marginLeft:'435px',width:'40px',height:'40px'}}>
-            <img src={imgDialogIcons.Close} alt='closeIcon'></img>
+            <img src={Icons.Close} alt='closeIcon'/>
           </IconButton>
           <IconButton
           aria-label='previous'
           onClick={handlePrev}
           style={{position:'absolute',marginTop:'220px',width:'40px',height:'40px',backgroundColor:'white'}}>
-            <img src={imgDialogIcons.Previous} alt='previousIcon'></img>
+            <img src={Icons.Previous} alt='previousIcon'/>
           </IconButton>
           <IconButton
           aria-label='next'
           onClick={handleNext}
           style={{position:'absolute',margin:'220px 0 0 440px',width:'40px',height:'40px',backgroundColor:'white'}}>
-            <img src={imgDialogIcons.Next} alt='nextIcon'></img>
+            <img src={Icons.Next} alt='nextIcon'/>
           </IconButton>
           <Card>
             <CardMedia

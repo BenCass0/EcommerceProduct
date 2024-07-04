@@ -1,20 +1,3 @@
-export const myAppBarIcons={
-    Logo: require('./logo.svg').default,
-    ProfilePicture: require('./image-avatar.png'),
-    ShoppingCart: require('./icon-cart.svg').default,
-  }
-
-export const counterIcons={
-    Minus: require('./icon-minus.svg').default,
-    Plus: require('./icon-plus.svg').default,
-}
-
-export const imgDialogIcons={
-    Close: require('./icon-close.svg').default,
-    Previous: require('./icon-previous.svg').default,
-    Next: require('./icon-next.svg').default,
-}
-
 export const files={
     Thumb1: require('./image-product-1-thumbnail.jpg'),
     Thumb2: require('./image-product-2-thumbnail.jpg'),
