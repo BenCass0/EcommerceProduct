@@ -8,17 +8,14 @@ import { MenuCart } from './MenuCart';
 
 export function MyAppBar(){
   const {count,setCount}=useContext(CountContext);
-  const [anchorEl,setAnchorEl]=useState(null);
+  const [anchorElement,setAnchorElement]=useState(null);
   const handleMenuOpen=(event)=>{
-    setAnchorEl(event.currentTarget);
+    setAnchorElement(event.currentTarget);
   }
   const handleMenuClose=()=>{
-    setAnchorEl(null);
+    setAnchorElement(null);
   }
-  const isMenuOpen=Boolean(anchorEl);
-  const handleClick=()=>{
-    console.log('Hola');
-  };
+  const isMenuOpen=Boolean(anchorElement);
 
     return(
       <AppBar sx={{backgroundColor:'#FFFFFF'}}>
@@ -60,7 +57,7 @@ export function MyAppBar(){
            </IconButton>
            <Menu 
            id='IconCart'
-           anchorEl={anchorEl}
+           anchorEl={anchorElement}
            open={isMenuOpen}
            onClose={handleMenuClose}
            sx={{mt:'10px'}}
@@ -70,7 +67,7 @@ export function MyAppBar(){
               <MenuCart count={count} setCount={setCount}/>
             </MenuItem>
            </Menu>
-           <IconButton edge="end" color='inherit' aria-label='ProfilePicture' sx={{marginLeft:'2vmax'}} onClick={handleClick}>
+           <IconButton edge="end" color='inherit' aria-label='ProfilePicture' sx={{marginLeft:'2vmax'}}>
                 <img src={Icons.ProfilePicture} 
                 alt='ProfilePicture' 
                 style={{width:'43px'}}

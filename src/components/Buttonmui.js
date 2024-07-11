@@ -10,9 +10,9 @@ export const Buttonmui=({title})=>{
             borderRadius:'0',
             width:'90px',
             height:'70px',
-            ':hover':{borderBottom:'4px solid hsl(26, 100%, 55%)'},}}
-        >
+            ':hover':{borderBottom:'4px solid hsl(26, 100%, 55%)'},}}>
             {title}
         </Button>
     )
 }
+
