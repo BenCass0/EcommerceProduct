@@ -1,5 +1,4 @@
 export const files={
-    // Components App.js
     Thumb1: require('./image-product-1-thumbnail.jpg'),
     Thumb2: require('./image-product-2-thumbnail.jpg'),
     Thumb3: require('./image-product-3-thumbnail.jpg'),
@@ -9,19 +8,13 @@ export const files={
     Img3: require('./image-product-3.jpg'),
     Img4: require('./image-product-4.jpg'),
 }
-export const ImgThumb=({image,onClick})=>{
-    return(
-        <div className='Images'>
-            <img
-            src={image}
-            alt='thumb'
-            style={{cursor:'pointer'}}
-            className='imgStyle'
-            onClick={onClick}
-            ></img>
-        </div>
-    )
-};
+
+export const images = [
+    { src: files.Img1, title: "Image 1", description: 'Image1' },
+    { src: files.Img2, title: "Image 2", description: 'Image2' },
+    { src: files.Img3, title: "Image 3", description: 'Image3' },
+    { src: files.Img4, title: "Image 4", description: 'Image4' }
+  ];
 
 export const Collections=()=> (
     <h1 style={{marginTop:'8vmax'}}>Collections</h1>
